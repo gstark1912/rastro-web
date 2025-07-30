@@ -30,7 +30,7 @@
     <!-- Insight Preview -->
     <section class="px-6 mt-8 mb-20">
         <h2 class="text-lg font-semibold mb-2">Último resumen</h2>
-        <p class="text-sm leading-relaxed text-gray-700">
+        <InsightTyper :speed="35" text="
             Al mirar lo que hiciste esta semana, algo empieza a quedar claro: estás aprendiendo a valorar las
             pequeñas decisiones que sostenés incluso cuando no todo sale como esperás.
 
@@ -39,8 +39,7 @@
             está prestando atención.
 
             Lo que hiciste esta semana no es perfecto, pero deja un rastro. Uno que dice que, más allá del
-            resultado, seguís queriendo avanzar con conciencia.
-        </p>
+            resultado, seguís queriendo avanzar con conciencia." />
     </section>
 </template>
 

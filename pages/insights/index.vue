@@ -36,15 +36,14 @@
         <!-- Reflexión -->
         <section>
             <h2 class="text-lg font-semibold mt-6 mb-2">Reflexión</h2>
-            <p class="text-sm leading-relaxed">
+            <InsightTyper :speed="35" text="
                 Esta semana mostraste esfuerzo y consistencia en varios aspectos importantes.
                 Lograste meditar incluso más de lo esperado, y mantuviste el control con las porciones extra.
                 Sin embargo, el consumo de alcohol y las comidas menos saludables se mantuvieron por encima de tus
                 metas.
                 No se trata de culparse, sino de observar: ¿qué situaciones te llevaron a esos desvíos?
                 La próxima semana puede ser una oportunidad para ajustar hábitos sin perder el avance ganado.
-                Recordá que el progreso no es lineal, pero tu compromiso se nota.
-            </p>
+                Recordá que el progreso no es lineal, pero tu compromiso se nota." />"
         </section>
 
         <!-- Botones de decisión -->
@@ -66,5 +65,6 @@
 </template>
 
 <script setup lang="ts">
+import InsightTyper from '~/components/InsightTyper.vue';
 import LineChart from '~/components/LineChart.vue'
 </script>
