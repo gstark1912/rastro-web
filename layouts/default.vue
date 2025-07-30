@@ -5,7 +5,10 @@
             <h1 class="text-xl font-semibold">Germán</h1>
         </header>
 
-        <NuxtPage />
+        <main class="flex-grow px-4 pb-[88px]">
+            <!-- Ajuste: el pb evita que el contenido quede debajo del footer -->
+            <NuxtPage />
+        </main>
 
         <!-- Bottom Navigation -->
         <nav class="fixed bottom-0 inset-x-0 bg-white border-t border-gray-200 flex justify-around py-3 text-green-700">
@@ -21,7 +24,7 @@
                 <span>📊</span>
                 Insights
             </NuxtLink>
-            <NuxtLink to="/settings" class="flex flex-col items-center text-sm">
+            <NuxtLink to="/dashboard" class="flex flex-col items-center text-sm">
                 <span>⚙️</span>
                 Configuración
             </NuxtLink>
