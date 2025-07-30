@@ -17,5 +17,6 @@
 </style>
 
 <template>
+  <meta name="theme-color" content="#f7faf8" />
   <NuxtLayout />
 </template>
