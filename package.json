@@ -14,10 +14,10 @@
     "firebase": "^11.0.1",
     "nuxt": "^3.12.4",
     "pinia": "^2.2.1",
-    "vue": "latest"
+    "vue": "^3.4.15"
   },
   "overrides": {
-    "vue": "latest"
+    "vue": "^3.4.15"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.14.0"
