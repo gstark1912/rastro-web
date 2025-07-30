@@ -19,9 +19,6 @@
                 <span>¿Meditaste hoy?</span>
                 <input type="checkbox" v-model="form.meditacion" class="accent-green-600 w-5 h-5" />
             </div>
-            <button @click="console.log('click ok')" class="bg-blue-500 text-white px-4 py-2 mt-4">
-                Test click
-            </button>
             <div class="flex justify-between items-center py-3 border-b border-gray-200">
                 <span>Comidas 'malas'</span>
                 <div class="relative flex items-center w-fit">
@@ -83,7 +80,7 @@
         </section>
 
         <!-- Botón Guardar -->
-        <div class="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200">
+        <div class="bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200">
             <button @click="guardarRegistro"
                 class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold shadow-sm">
                 Guardar registro
