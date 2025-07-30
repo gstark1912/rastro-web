@@ -11,7 +11,18 @@ export default defineNuxtConfig({
   pwa: {
     registerType: 'autoUpdate',
     devOptions: {
-      enabled: true
+      enabled: true,
+      suppressWarnings: false,
+    },
+    workbox: {
+      navigateFallback: '/', globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+      cleanupOutdatedCaches: true,
+      clientsClaim: true,
+      skipWaiting: true
+    },
+    client: {
+      installPrompt: true,
+      periodicSyncForUpdates: 20,
     },
     manifest: {
       name: 'Rastro',
@@ -33,12 +44,22 @@ export default defineNuxtConfig({
           type: 'image/png'
         }
       ]
-    },
-    workbox: {
-      navigateFallback: '/dashboard',
     }
   },
   pinia: {
     storesDirs: ['./stores/**'],
+  },
+  app: {
+    head: {
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'theme-color', content: '#f7faf8' },
+        { name: 'apple-mobile-web-app-capable', content: 'yes' },
+        { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }
+      ],
+      link: [
+        { rel: 'apple-touch-icon', href: '/icon-192.png' }
+      ]
+    }
   }
 })
