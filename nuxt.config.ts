@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     registerType: 'autoUpdate',
     devOptions: {
       enabled: true,
-      suppressWarnings: false,
+      suppressWarnings: true,
     },
     workbox: {
       navigateFallback: '/', globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
@@ -48,18 +48,5 @@ export default defineNuxtConfig({
   },
   pinia: {
     storesDirs: ['./stores/**'],
-  },
-  app: {
-    head: {
-      meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'theme-color', content: '#f7faf8' },
-        { name: 'apple-mobile-web-app-capable', content: 'yes' },
-        { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }
-      ],
-      link: [
-        { rel: 'apple-touch-icon', href: '/icon-192.png' }
-      ]
-    }
   }
 })
